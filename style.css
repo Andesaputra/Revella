@@ -158,6 +158,10 @@ nav.backnav {
   text-transform: uppercase;
 }
 
+.navbar_links:hover{
+    text-decoration: underline;
+}
+
 #search {
   display: flex;
   justify-content: center;
@@ -401,6 +405,10 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+}
+
+.infomation_content_links:hover{
+    text-decoration: underline;
 }
 
 .information-content a {
