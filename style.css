@@ -203,23 +203,40 @@ header h1 {
 }
 
 .content-img-1 {
-  background: url("./images/png/image\ 2.png");
-  background-size: cover;
+    background: url('./images/png/image\ 2.png');
+    background-size: cover;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1s;
 }
 
 .content-img-2 {
-  background: url("./images/png/image\ 3.png");
-  background-size: cover;
+    background: url('./images/png/image\ 3.png');
+    background-size: cover;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1.5s;
 }
 
 .content-img-3 {
-  background: url("./images/png/image\ 4.png");
-  background-size: cover;
+    background: url('./images/png/image\ 4.png');
+    background-size: cover;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 1.5s;
 }
 
 .content-img-4 {
-  background: url("./images/png/image\ 5.png");
-  background-size: cover;
+    background: url('./images/png/image\ 5.png');
+    background-size: cover;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1.5s;
+}
+
+.scrolldown{
+    opacity: 1;
+    transform: translateX(0px);
 }
 
 .content-text {
