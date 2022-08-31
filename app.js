@@ -39,3 +39,19 @@ prev.addEventListener("click", (e) => {
 
 let width = carousel.offsetWidth;
 window.addEventListener("resize", (e) => (width = carousel.offsetWidth));
+
+const content_img = document.querySelectorAll(".content-img");
+window.addEventListener('scroll', fadeIn);
+
+function fadeIn(){
+  content_img.forEach((content_img) => {
+    let distanceInView = content_img.getBoundingClientRect().top - window.innerHeight + 20;
+
+      if(distanceInView < 0){
+        content_img.classList.add('scrolldown');
+      } else {
+        content_img.classList.remove('scrolldown');
+      }
+  });
+}
+fadeIn();
